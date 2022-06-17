@@ -172,7 +172,7 @@ dotenv.config();
 
     await doc.loadInfo();
 
-    const esquireSheet            = doc.sheetsById[1417022314]
+    const esquireSheet          = doc.sheetsById[1417022314]
     const mobileTotal           = coreWebVital.slice(0, 3).reduce((a, b) => a + b);
     const desktopTotal          = coreWebVital.slice(3, 6).reduce((a, b) => a + b);
     const averageGoodPercentage = (coreWebVital[2]/mobileTotal + coreWebVital[5]/desktopTotal)/2;
@@ -231,7 +231,7 @@ dotenv.config();
 
     await doc.loadInfo();
 
-    const hbSheet            = doc.sheetsById[225516983]
+    const hbSheet               = doc.sheetsById[225516983]
     const mobileTotal           = coreWebVital.slice(0, 3).reduce((a, b) => a + b);
     const desktopTotal          = coreWebVital.slice(3, 6).reduce((a, b) => a + b);
     const averageGoodPercentage = (coreWebVital[2]/mobileTotal + coreWebVital[5]/desktopTotal)/2;
@@ -290,7 +290,7 @@ dotenv.config();
 
     await doc.loadInfo();
 
-    const cosmartSheet            = doc.sheetsById[1412392396]
+    const cosmartSheet          = doc.sheetsById[1412392396]
     const mobileTotal           = coreWebVital.slice(0, 3).reduce((a, b) => a + b);
     const desktopTotal          = coreWebVital.slice(3, 6).reduce((a, b) => a + b);
     const averageGoodPercentage = (coreWebVital[2]/mobileTotal + coreWebVital[5]/desktopTotal)/2;
@@ -349,7 +349,7 @@ dotenv.config();
 
     await doc.loadInfo();
 
-    const letzshopSheet            = doc.sheetsById[1571063584]
+    const letzshopSheet         = doc.sheetsById[1571063584]
     const mobileTotal           = coreWebVital.slice(0, 3).reduce((a, b) => a + b);
     const desktopTotal          = coreWebVital.slice(3, 6).reduce((a, b) => a + b);
     const averageGoodPercentage = (coreWebVital[2]/mobileTotal + coreWebVital[5]/desktopTotal)/2;
