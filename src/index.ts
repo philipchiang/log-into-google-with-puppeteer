@@ -15,11 +15,11 @@ const updateSheet = async (url: string, sheetId: number) => {
     const page = await browser.newPage();
 
     await page.goto(url, {waitUntil: 'domcontentloaded', timeout: 0});
-    await page.type('[type="email"]', process.env.gmailUsername);
+    await page.type('[type="email"]', process.env.USER_GMAIL);
     await page.click('#identifierNext');
     await page.waitForTimeout(5000);
 
-    await page.type('[type="password"', process.env.password);
+    await page.type('[type="password"', process.env.USER_PASSWORD);
     await page.click('#passwordNext');
     
     await page.waitForTimeout(10000);
@@ -103,7 +103,7 @@ const sendEmail = () => {
     
     const mailOptions = {
         from: process.env.NODE_MAILER_AUTH_USER,
-        to: 'philip.chiang@scmp.com, kei.ling@scmp.com',
+        to: process.env.NODE_MAILER_MAILTO,
         subject: '[Core Web Vital] Report has been updated',
         text: 'The report has been updated already. Please check. Thanks.',
     };
