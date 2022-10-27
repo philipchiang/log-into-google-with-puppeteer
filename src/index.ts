@@ -107,7 +107,7 @@ const sendEmail = () => {
         from: process.env.NODE_MAILER_AUTH_USER,
         to: process.env.NODE_MAILER_MAILTO,
         subject: '[Core Web Vital] Report has been updated',
-        text: 'The report has been updated already. Please check. Thanks.',
+        text: `The report has been updated already. Please check. Thanks.\nLink: ${process.env.GOOGLE_DOC_LINK}`,
     };
     
     transporter.sendMail(mailOptions);
