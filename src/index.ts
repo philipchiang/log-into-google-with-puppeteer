@@ -38,7 +38,9 @@ const updateSheet = async (url: string, sheetId: number) => {
     });
     
     const todayDate = await page.evaluate(() => {
-        return document.getElementsByClassName("zTJZxd")[0].innerHTML.slice(-7);
+        const dateElement = document.getElementsByClassName("zTJZxd")[0] as HTMLElement | null
+
+        return dateElement.innerText.slice(14);
     });
     const formattedDate = moment(todayDate, "MM/DD/YY").format("DD/MM/YYYY");
 
